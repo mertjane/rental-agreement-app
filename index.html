@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <script src="my-script.js"></script>
+    <div class="container" id="pdf-content">
+        <div class="EN">
+            <h3 style="margin-top: 20px;">LEASE AGREEMENT</h3>
+            <h5>(FURNISHED HOUSING)</h5>
+            <table id="englishTable">
+                <tr>
+                    <td>Building No. - Floor No. - Flat No.</td>
+                    <td id="englishTableCell1"></td>
+                </tr>
+                <tr>
+                    <td>Neighborhood – Street – Street</td>
+                    <td id="englishTableCell2"></td>
+                </tr>
+                <tr>
+                    <td>District – Province</td>
+                    <td id="englishTableCell3"></td>
+                </tr>
+                <tr>
+                    <td>Type of leased item</td>
+                    <td id="englishTableCell4"></td>
+                </tr>
+                <tr>
+                    <td><strong>Lessor –</strong><br>
+                        Name, Surname,
+                        Contact Number</td>
+                    <td id="englishTableCell5"></td>
+                </tr>
+                <tr>
+                    <td><strong>Lessor –</strong> ID No. or
+                        Passport No.
+                    </td>
+                    <td id="englishTableCell6"></td>
+                </tr>
+                <tr>
+                    <td><strong>Lessor –</strong> Address
+                    </td>
+                    <td id="englishTableCell7"></td>
+                </tr>
+                <tr>
+                    <td><strong>Lessee –</strong>
+                        Name, Surname,
+                        Contact Number</td>
+                    <td id="englishTableCell8"></td>
+                </tr>
+                <tr>
+                    <td><strong>Lessee –</strong> ID
+                        No. or
+                        Passport No.
+                    </td>
+                    <td id="englishTableCell9"></td>
+                </tr>
+                <tr>
+                    <td><strong>Lessee –</strong> Address
+                    </td>
+                    <td id="englishTableCell10"></td>
+                </tr>
+                <tr>
+                    <td><strong>Guarantor –</strong>
+                        Name, Surname , ID No., Address</td>
+                    <td id="englishTableCell11"></td>
+                </tr>
+                <tr>
+                    <td>One month's leasement fee</td>
+                    <td id="englishTableCell12"></td>
+                </tr>
+                <tr>
+                    <td>One-year leasement fee</td>
+                    <td id="englishTableCell13"></td>
+                </tr>
+                <tr>
+                    <td>How the rent will be paid</td>
+                    <td>It is decided in article 4 of the contract.</td>
+                </tr>
+                <tr>
+                    <td>Leasement Period</td>
+                    <td id="englishTexts2"></td>
+                </tr>
+                <tr>
+                    <td>Beginning of the lease</td>
+                    <td id="englishTableCell15"></td>
+                </tr>
+                <tr>
+                    <td>Current status of the leased item</td>
+                    <td>FURNISHED HOUSING – 8.1 of the contract. delivered as specified in the article.</td>
+                </tr>
+                <tr>
+                    <td>What will the leased item be used for</td>
+                    <td>HOUSING</td>
+                </tr>
+            </table>
+            <h4 class="title">
+                DECLARATION OF FURNITURE AND FIXTURES DELIVERED TOGETHER WITH THE LEASED PROPERTY
+            </h4>
+            <div class="box">
+                The real estate subject to this contract has been rented out in the form and amount of goods that will
+                be suitable for living. In this context, the list of fixed and complete fixtures received together with
+                the immovable rented by the Lessor - with its details, is included in ANNEX-1 titled "Furniture Received
+                with the Leased Property - Fixture and Fixture Statement". ANNEX-1 titled "Declaration of
+                Furniture-Fixture and Fixtures Received Together with the Leased Property" is an integral part of this
+                contract.
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="TR">
+            <h3 style="margin-top: 20px;">KİRA SÖZLEŞMESİ</h3>
+            <h5>(EŞYALI KONUT)</h5>
+            <table id="turkishTable">
+                <tr>
+                    <td>Bina No – Kat No – Daire No</td>
+                    <td id="turkishTableCell1"></td>
+                </tr>
+                <tr>
+                    <td>Mahallesi – Caddesi – Sokağı</td>
+                    <td id="turkishTableCell2"></td>
+                </tr>
+                <tr>
+                    <td>İlçe – İl</td>
+                    <td id="turkishTableCell3"></td>
+                </tr>
+                <tr>
+                    <td>Kiralanan şeyin cinsi</td>
+                    <td id="turkishTableCell4"></td>
+                </tr>
+                <tr>
+                    <td><strong>Kiraya Verenin –</strong>
+                        Adı, Soyadı , İrtibat Numarası</td>
+                    <td id="turkishTableCell5"></td>
+                </tr>
+                <tr>
+                    <td><strong>Kiraya Verenin –</strong> T.C
+                        No.
+                    </td>
+                    <td id="turkishTableCell6"></td>
+                </tr>
+                <tr>
+                    <td><strong>Kiraya Verenin –</strong> Adresi
+                    </td>
+                    <td id="turkishTableCell7"></td>
+                </tr>
+                <tr>
+                    <td><strong>Kiralayanın –</strong>
+                        Adı, Soyadı , İrtibat Numarası</td>
+                    <td id="turkishTableCell8"></td>
+                </tr>
+                <tr>
+                    <td><strong>Kiralayanın –</strong> T.C
+                        No
+                    </td>
+                    <td id="turkishTableCell9"></td>
+                </tr>
+                <tr>
+                    <td><strong>Kiralayanın –</strong> Adresi
+                    </td>
+                    <td id="turkishTableCell10"></td>
+                </tr>
+                <tr>
+                    <td><strong>Kefilin –</strong>
+                        Adı, Soyadı , T.C. No , Adresi</td>
+                    <td id="turkishTableCell11"></td>
+                </tr>
+                <tr>
+                    <td>Bir aylık kira bedeli karşılığı</td>
+                    <td id="turkishTableCell12"></td>
+                </tr>
+                <tr>
+                    <td>Bir senelik kira bedeli karşılığı</td>
+                    <td id="turkishTableCell13"></td>
+                </tr>
+                <tr>
+                    <td>Kira bedelinin ne şekilde ödeneceği</td>
+                    <td>Sözleşmenin 4. maddesinde kararlaştırılmıştır.</td>
+                </tr>
+                <tr>
+                    <td>Kira süresi</td>
+                    <td id="turkishTexts2"></td>
+                </tr>
+                <tr>
+                    <td>Kiranın başlangıcı</td>
+                    <td id="turkishTableCell15"></td>
+                </tr>
+                <tr>
+                    <td>Kiralanan şeyin şimdiki durumu</td>
+                    <td>EŞYALI KONUT – Sözleşmenin 8.1. maddesinde belirtildiği şekilde teslim edilmiştir.</td>
+                </tr>
+                <tr>
+                    <td>Kiralanan şeyin ne için kullanılacağı</td>
+                    <td>KONUT</td>
+                </tr>
+            </table>
+            <h4 class="title">
+                KİRALANAN TAŞINMAZ İLE BERABER TESLİM ALINAN MOBİLYA VE DEMİRBAŞ EŞYANIN BEYANI
+            </h4>
+            <div class="box">
+                İşbu sözleşme konusu taşınmaz, yaşamaya elverişli olacak şekil ve miktarda eşyayı içerir halde kiraya
+                verilmiştir. Bu kapsamda - Kiralayan tarafından kiralanan taşınmaz ile beraber sağlam ve eksiksiz teslim
+                alınan demirbaş eşya listesi - detayları ile “Kiralanan Taşınmaz İle Beraber Teslim Alınan Mobilya -
+                Demirbaş Eşya Beyanı” başlıklı EK-1 ‘de yer almaktadır. “Kiralanan Taşınmaz İle Beraber Teslim Alınan
+                Mobilya- Demirbaş Eşya Beyanı” başlıklı EK-1 işbu sözleşmenin ayrılmaz bir parçasıdır.
+            </div>
+            <br>
+            <span>
+                page 1 of 7
+            </span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="EN">
+            <h4 class="article">ARTICLE 1- INTRODUCTION:</h4>
+            <div class="boxesA">
+                <p>
+                    This lease agreement (hereinafter referred to as the "Agreement") has been signed by mutual
+                    agreement between <span id="englishSpan16" class="item"
+                        style="font-style: italic;font-weight: 700;"></span>.(Lessor) and <span id="englishSpan17"
+                        class="item" style="font-style: italic;font-weight: 700;"></span>.(Lessee), the detailed
+                    information of which is given in the table
+                    on page 1 of the Agreement. (Lessor and Lessee will be referred to hereinafter as the "Parties").
+                    The Parties agree that the Lessor shall lease from the Lessor the furnished immovable property
+                    located at "<span id="englishSpan18" class="item"
+                        style="font-style: italic;font-weight: 700;"></span>", subject to all provisions of this
+                    Agreement, which is an integral part of the Turkish
+                    Code of Obligations, other relevant legislation and its annexes, together with the furniture and
+                    fixtures in the immovable property and for use only as a private residence, in accordance with the
+                    following contractual terms.
+                </p>
+            </div>
+            <h4 class="article">ARTICLE 2- LEASE PERIOD:</h4>
+            <div class="boxesB">
+                <p>
+                    The lease term is <span class="item" id="englishSpan19"
+                        style="font-style: italic; font-weight: 700;"></span>(<span class="item" id="englishSpan20"
+                        style="font-style: italic; font-weight: 700;"></span>) years/months. Rental contract <span
+                        class="item" id="englishSpan21" style="font-style: italic; font-weight: 700;"></span>. begins,
+                    ends on <span class="item" id="englishSpan22"
+                        style="font-style: italic; font-weight: 700;"></span>.. Sides If they
+                    wish, they can extend the contract period by mutual negotiation. Failure to terminate the case, it
+                    is
+                    considered to be legally renewed for a period of one year. surety, joint debtor, joint surety The
+                    surety's liability as a surety continues for the duration of the rental relationship (including
+                    extended
+                    rental it does.
+                </p>
+            </div>
+            <br>
+            <h4 class="article">ARTICLE 3- RENTAL FEE, HOW IT WILL BE PAID AND INCREASE:</h4>
+            <ul>
+                <li style="line-height: 18.5px;">
+                    The rental fee is monthly net <span class="item" id="englishSpan23"
+                        style="font-style: italic; font-weight: 700;"></span>-TL (<span class="item" id="englishTexts4"
+                        style="font-style: italic; font-weight: 700;"></span>-Turkish Lira)Turkish Lira) and will be
+                    sent to the Lessor's bank account - with the bank charges belonging to the Lessor - between <span
+                        class="item" id="englishSpan25" style="font-style: italic; font-weight: 700;"></span> and
+                    <span class="item" id="englishSpan26" style="font-style: italic; font-weight: 700;"></span> of each
+                    month.
+                </li>
+            </ul>
+            <table class="account-det">
+                <th>ACCOUNT INFO</th>
+                <tbody>
+                    <tr>
+                        <td><strong>BANK NAME:</strong> <span class="item" id="englishSpan27"></span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>ACCOUNT OWNER:</strong> <span class="item" id="englishSpan28"></span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>IBAN:</strong> <span class="item" id="englishSpan29"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <li style="text-align: justify;">
+                The annual rent increase is the consumer price increase as reported by the Turkish Statistical Institute
+                (TUIK). It is calculated based on the last annual average in the CPI index. The lessor has these
+                conditions in advance accepts and undertakes.
+            </li>
+            <li style="text-align: justify;">
+                Rental fees to be paid have been determined clearly and both arising from the signature of this contract
+                and and all kinds of taxes, withholding, funds, duties, fees and other expenses arising from the rent
+                payment It will be paid by the lessor. The lessor does not take any withholding tax, VAT and other
+                similar legal deductions. It cannot be deducted from the monthly net rent.
+            </li>
+        </div>
+        <div class="divider"></div>
+        <div class="TR">
+            <h4 class="article">MADDE 1- GİRİŞ:</h4>
+            <p>
+                İşbu kira sözleşmesi (Bundan sonra “Sözleşme” olarak anılacaktır.), detaylı bilgileri Sözleşmenin 1
+                numaralı sayfasında mevcut tabloda yer alan <span id="turkishSpan16" class="item"
+                    style="font-style: italic;font-weight: 700;"></span>.(Kiraya Veren), ve <span id="turkishSpan17"
+                    class="item" style="font-style: italic;font-weight: 700;"></span>.(Kiralayan) arasında
+                karşılıklı mutabakata vararak imzalanmıştır. (Kiraya Veren ve Kiralayan bundan sonra birlikte “Taraflar”
+                olarak anılacaktır.) Taraflar, Kiralayanın Kiraya Verenden, "<span id="turkishSpan18" class="item"
+                    style="font-style: italic;font-weight: 700;"></span>"
+                adresinde mukim eşyalı taşınmazı, Türk Borçlar Kanunu, ilgili sair mevzuat ve ekleriyle ayrılmaz bir
+                bütün olan işbu Sözleşmenin tüm hükümlerine tabi olarak, aşağıda belirtilen sözleşme koşulları uyarınca,
+                taşınmazdaki mobilya ve demirbaşlar ile birlikte ve yalnızca özel konut olarak kullanılmak üzere
+                kiralayacağını kabul eder.
+            </p>
+            <br>
+            <h4 class="article">MADDE 2- KİRA SÜRESİ:</h4>
+            <p>
+                Kira süresi <span id="turkishSpan19" class="item" style="font-style: italic;font-weight: 700;"></span>
+                (<span id="turkishSpan20" class="item" style="font-style: italic;font-weight: 700;"></span>) yıl/aydır.
+                Kira sözleşmesi <span id="turkishSpan21" class="item"
+                    style="font-style: italic;font-weight: 700;"></span>. başlar, <span id="turkishSpan22" class="item"
+                    style="font-style: italic;font-weight: 700;"></span>. tarihinde sona erer. Taraflar
+                isterlerse karşılıklı görüşme ile sözleşme süresini uzatabileceklerdir. Sözleşmenin feshedilmemesi
+                halinde, bir yıl süre ile kanunen yenilenmiş kabul edilir. Kefil, müşterek borçlu müteselsil kefil
+                olmakla, kefilin kefaleten sorumluluğu kira ilişkisi müddetince(uzayan kira dönemleri de dahil) devam
+                eder.
+            </p>
+            <br>
+            <h4 class="article">MADDE 3- KİRA BEDELİ, NE ŞEKİLDE ÖDENECEĞİ VE ARTIŞLAR:</h4>
+            <ul>
+                <li>
+                    Kira bedeli aylık net <span id="turkishSpan23" class="item"
+                        style="font-style: italic;font-weight: 700;"></span>–TL(<span id="turkishTexts4" class="item"
+                        style="font-style: italic;font-weight: 700;"></span>TürkLirası) olup, her ayın <span
+                        id="turkishSpan25" class="item" style="font-style: italic;font-weight: 700;"></span>’i ile <span
+                        id="turkishSpan26" class="item" style="font-style: italic;font-weight: 700;"></span>’i arasında
+                    Kiraya
+                    Verenin aşağıda bilgileri yer alan banka hesabına - banka masrafları Kiralayana ait olacak şekilde -
+                    gönderilecektir.
+                </li>
+            </ul>
+            <table class="account-det">
+                <th>HESAP BİLGİLERİ</th>
+                <tbody>
+                    <tr>
+                        <td><strong>BANKA:</strong> <span class="item" id="turkishSpan27"></span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>HESAP SAHİBİ:</strong> <span class="item" id="turkishSpan28"></span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>IBAN:</strong> <span class="item" id="turkishSpan29"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <li style="text-align: justify;">
+                Kira bedeli yıllık artışı, Türkiye İstatistik Kurumu‘nun (TÜİK) bildirmiş olduğu tüketici fiyat
+                endeksindeki (TÜFE) son yıllık ortalama esas alınarak hesaplanır. Kiralayan bu koşulları peşinen
+                kabul ve taahhüt eder.
+            </li>
+            <li style="text-align: justify;">
+                Ödenecek kira bedelleri net olarak belirlenmiş olup, gerek işbu sözleşmenin imzasından doğan ve
+                gerekse kira ödemesinden kaynaklanan her türlü vergi, stopaj, fon, resim, harçlar ve diğer giderler
+                Kiralayan tarafından ödenecektir. Kiralayan, stopaj, KDV ve benzeri diğer yasal kesintileri hiçbir
+                surette, aylık net kira bedelinden düşemez.
+            </li>
+            <span>
+                page 2 of 7
+            </span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="EN">
+            <h4 class="article">ARTICLE 4- DEPOSIT:</h4>
+            <p>The deposit amount of <span id="englishSpan30" class="item"
+                    style="font-style: italic;font-weight: 700;"></span> TL has been taken from the lessor as the
+                security deposit.</p>
+            <br>
+            <p>
+                In the event that the lessor vacates the immovable, all subscriptions, administrative expenses, invoices
+                and similar payment obligations arising during the contract period must be paid by the Lessor and that
+                the fixtures included in ANNEX-1, titled “Furniture, Fixtures and Items Received Together with the
+                Leased Property”, must be paid by the Lessor. Provided that it has been delivered to the Lessor in
+                complete, sound and properly working condition (in proportion to the condition of the goods on the date
+                the property is delivered to the Lessor and tolerating wear as a result of reasonable use) - the initial
+                deposit of <span id="englishSpan31" class="item" style="font-style: italic;font-weight: 700;"></span>TL
+                will be refunded (without interest).
+            </p>
+            <br>
+            <br>
+            <p>
+                In case the payment obligations specified in Article 4.2 are not fulfilled by the Lessor, the Lessor
+                expressly consents to the deduction of the relevant amount from the Deposit.
+            </p>
+            <br>
+            <br>
+            <p>
+                The lessor expressly consents to deducting the loss of the Lessor from the deposit price, in case of any
+                damage other than wear and tear as a result of reasonable use, or loss/missing of the fixtures - based
+                on the market price of the same or equivalent fixture on the set-off date.
+            </p>
+            <br>
+            <br>
+            <br>
+            <p>
+                The deposit fee is paid within 2 (two) weeks from the delivery of the immovable to the Lessor and, if
+                any, 4.3. and 4.4. It will be returned to the Lessor after the deductions specified in the articles are
+                made.
+            </p>
+            <h4 class="article">ARTICLE 5- DELAY, DEFAULT AND ACCEPTANCE IN THE PAYMENT OF THE RENTAL:</h4>
+            <p>
+                If the rent is not paid in the form and time specified in Article 3, if the rent is not paid within 10
+                days from the lessor's written notice to the address of the Lessor in the table on page 1 of the
+                Contract or to the address of the immovable subject of the contract - all of the rent of the remaining
+                months will become due.
+            </p>
+            <br>
+            <br>
+            <p>
+                Failure to pay the rental fee despite a written notice is grounds for termination of the contract and
+                eviction. In case of delay in payment of the rental fee, 1.5% monthly default interest will accrue.
+            </p>
+            <br>
+            <p>
+                The Lessor and the Guarantor are jointly and severally liable for the rental price, interest to be
+                incurred and all other receivables.
+            </p>
+        </div>
+        <div class="divider"></div>
+        <div class="TR">
+            <h4 class="article">MADDE 4- DEPOZİTO:</h4>
+            <p>Kiralayandan <span id="turkishSpan30" class="item" style="font-style: italic;font-weight: 700;"></span>TL
+                depozito bedeli, teminat bedeli olarak alınmıştır.</p>
+            <br>
+            <p>
+                Kiralayanın taşınmazı boşaltması durumunda, Sözleşme süresi içerisinde doğmuş tüm aidat, yönetim gider
+                borçları, fatura bedelleri ve benzeri ödeme yükümlülüklerinin tamamının Kiralayan tarafından ödenmiş
+                olması ve “Kiralanan Taşınmaz İle Beraber Teslim Alınan Mobilya Demirbaş Eşya Beyanı” başlıklı EK-1’de
+                yer alan demirbaşların Kiraya Verene eksiksiz, sağlam ve düzgün şekilde çalışır durumda teslim edilmiş
+                olması şartıyla (taşınmazın Kiralayana teslim edildiǧi tarihte eşyaların durumuyla orantılı bir şekilde
+                ve makul kullanım sonucu yıpranmaya tolerans gösterilerek) başlangıçta kendisinden alınmış olan <span
+                    id="turkishSpan31" class="item" style="font-style: italic;font-weight: 700;"></span>TL
+                depozito bedeli (faizsiz)olarak iade edilecektir.
+            </p>
+            <br>
+            <p>
+                4.2 numaralı maddede belirtilen ödeme yükümlülüklerinin Kiralayan tarafından yerine getirilmemesi
+                halinde, ilgili tutarın Depozito bedelinden mahsup edilmesine Kiralayan açıkça muvafakat etmektedir.
+            </p>
+            <br>
+            <p>
+                EK-1 de yer alan demişbaşlarda, makul kullanım sonucu yıpranma haricinde bir hasar tespit edilmesi
+                veya demirbaşlarda kayıp/eksik olması halinde- ilgili demirbaşın aynısı veya muadilinin mahsup
+                tarihindeki piyasa bedeli esas alınacak şekilde- Kiraya Verenin zararının depozito bedelinden mahsup
+                edilmesine Kiralayan açıkça muvafakat etmektedir.
+            </p>
+            <br>
+            <p>
+                Depozito bedeli, taşınmazın Kiraya Verene teslim edilmesinden itibaren 2 (iki) hafta içinde ve eğer var
+                ise 4.3. ve 4.4. maddelerde belirtilen mahsuplamalar yapıldıktan sonra, Kiralayana iade edilecektir.
+            </p>
+            <h4 class="article">MADDE 5- KİRA BEDELİ ÖDENMESİNDE GECİKME, TEMERRÜT VE MUACCELİYET:</h4>
+            <p>
+                Kira bedellerinin 3’üncü maddede belirtilen şekil ve zaman içerisinde ödenmemesi halinde Kiraya Veren
+                tarafından, Kiralayanın Sözleşmenin 1 numaralı sayfasında mevcut tabloda yer alan adresine veya sözleşme
+                konusu taşınmaz adresine yapacağı yazılı ihtardan itibaren 10 gün içerisinde kira bedelinin ödenmemiş
+                olması halinde - kalan ayların kira bedellerinin tamamı muaccel hale gelecektir.
+            </p>
+            <br>
+            <p>
+                Kira bedelinin yazılı ihtara rağmen ödenmemesi sözleşmenin feshi ve tahliye nedenidir. Kira bedelinin
+                ödenmesinde gecikilmesi halinde aylık %1,5 temerrüt faizi tahakkuk edecektir.
+            </p>
+            <br>
+            <p>
+                Kiralayan ve Kefil, kira bedeli, işleyecek faiz ve diğer tüm alacak kalemleri bakımından müştereken ve
+                müteselsilen sorumludurlar.
+            </p>
+            <br>
+            <br>
+            <span>page 3 of 7</span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="EN">
+            <h4 class="article">ARTICLE 6- PURPOSE OF USE OF THE LEASED PLACE, TRANSFER AND SUB-LEAS:</h4>
+            <p>
+                The leased property is only <span class="item" id="englishTexts3"
+                    style="font-style: italic;font-weight: 700;"></span>. will be used as The leased immovable cannot be
+                transferred or assigned
+                to another person or leased to other real or legal persons without the written consent of the Lessor.
+                The Lessor cannot, in any way, transfer or assign its rights and debts arising from this contract,
+                partially or completely, to third parties, or leave its benefit partially or completely to third
+                parties.
+            </p>
+            <h4 class="article">ARTICLE 7- DELIVERY METHOD OF THE LEASED PROPERTY AND WORKS TO BE DONE:</h4>
+            <p>
+                The rented immovable has already been delivered to the Lessor as "FURNISHED PRIVATE HOUSING" and the
+                fixtures included in ANNEX-1 titled "Declaration of Furniture and Fixtures Received Together with the
+                Leased Property" are present in the immovable in a complete, sound and properly working condition.
+            </p>
+            <br>
+            <p>
+                The lessor agrees to keep the interior of the said immovable in good condition during his stay in the
+                immovable. The Lessor cannot make any modifications to the leased property in a way that could change or
+                affect the structure of the building without the written consent of the Lessor. It cannot interfere with
+                the main architectural elements, cannot make changes. Changing or expanding the scope of business is
+                subject to the written consent of the Lessor. The lessor agrees to preserve the decorative layout of the
+                interior of the flat, including all fixtures/furniture, in accordance with the original arrangement of
+                the property.
+            </p>
+            <br>
+            <p>
+                The Lessor is responsible for compensating for all damages to the immovable, paying the costs or
+                indemnifying at the request of the Lessor.
+            </p>
+            <br>
+            <p>
+                In the event of breakage, loss, theft, damage or destruction of the fixtures/furniture listed in Annex
+                1, the Lessor is responsible - immediately upon the Lessor's request - for covering the costs of repair
+                or replacement of said fixtures/furniture. This condition is subject to reasonable wear and tear. If the
+                Lessor fails to cooperate with the payment of such damage and loss, the Lessor shall be entitled to
+                deduct the required amount from the Deposit in accordance with Articles 4.4 and 4.5 of this Agreement.
+            </p>
+            <br>
+            <br>
+            <br>
+            <p>
+                The Lessor will make subscriptions for electricity, water, natural gas, etc. in its own name - at its
+                own cost - within fifteen days at the latest from the date of the contract, and the debts before the
+                date of the contract will remain with the Lessor.
+            </p>
+        </div>
+        <div class="divider"></div>
+        <div class="TR">
+            <h4 class="article">MADDE 6-KİRALANAN YERİN KULLANIM AMACI, DEVRİ VE ALT KİRA:</h4>
+            <p>
+                Kiralanan taşınmaz sadece <span class="item" id="turkishTexts3"
+                    style="font-style: italic;font-weight: 700;"></span> olarak kullanılacaktır. Kiralanan taşınmaz
+                hiçbir şekilde Kiraya Verenin
+                yazılı izni olmaksızın, başkasına devir ve temlik edilemez, başkaca gerçek ya da tüzel kişilere
+                kiralanamaz. Kiralayan işbu sözleşmeden doğan hak ve borçlarını hiçbir şekilde kısmen veya tamamen
+                başkasına devir veya temlik edemez, istifadesini kısmen veya tamamen 3. şahsa bırakamaz.
+            </p>
+            <h4 class="article">MADDE 7- KİRALANAN TAŞINMAZIN TESLİM ŞEKLİ VE YAPILACAK İŞLER:</h4>
+            <p>
+                Kiralanan taşınmaz halihazırda “EŞYALI ÖZEL KONUT” olarak ve “Kiralanan Taşınmaz İle Beraber Teslim
+                Alınan Mobilya Demirbaş Eşya Beyanı” başlıklı EK-1’de yer alan demirbaşlar eksiksiz, sağlam ve düzgün
+                şekilde çalışır durumda taşınmazda mevcut olarak Kiralayana teslim edilmiştir.
+            </p>
+            <br>
+            <p>
+                Kiralayan, taşınmazda kaldıǧı süre boyunca söz konusu taşınmazın iç kısmını iyi durumda tutmayı kabul
+                eder. Kiralayan, kiralanan taşınmazda, Kiraya Verenin yazılı izni olmaksızın, binanın yapısını
+                deǧiştirebilecek ve etkileyebilecek bir şekilde tadilat yapamaz. Ana mimari elemanlara müdahale edemez,
+                değişiklik yapamaz. İştigal mevzuunun değiştirilmesi veya genişletilmesi, Kiralayanın yazılı
+                muvafakatine bağlıdır. Kiralayan, taşınmazın asıl düzenlemesine uygun şekilde tüm demirbaşlar/mobilyalar
+                dahil olmak üzere dairenin iç kısmının dekoratif düzenini korumayı kabul eder.
+            </p>
+            <br>
+            <p>
+                Kiralayan, taşınmazda meydana gelen tüm zararları telafi etmekten, masraflarını ödemekten veya Kiraya
+                Verenin talebi üzerine tazmin etmekten sorumludur.
+            </p>
+            <br>
+            <p>
+                Kiralayan, EK-1’de listesi yer alan demirbaş eşyaların/mobilyaların kırılması, kaybolması, çalınması,
+                hasar görmesi veya tahrip edilmesi durumunda - Kiraya Verenin talebi üzerine derhal - söz konusu
+                demirbaş eşyaların/mobilyaların onarımının veya deǧiştirilmesinin masraflarını karşılamaktan sorumludur.
+                Bu koşul, makul yıpranma şartına tabidir. Kiralayan, söz konusu zarar ve ziyanın ödenmesine ilişkin
+                olarak işbirliǧi yapmazsa Kiraya Veren, gerekli meblaǧı işbu sözleşmenin 4.4. ve 4.5. maddeleri uyarınca
+                Depozitodan mahsup etme hakkı kazanacaktır.
+            </p>
+            <br>
+            <p>
+                Kiralayan sözleşmenin yapıldığı tarihten itibaren en geç onbeş gün içerisinde elektrik, su, doğalgaz vb.
+                abonelikleri kendi adına - bedeli yine kendisine ait olmak üzere - yaptıracak olup, sözleşme tarihinden
+                önceki borçlar Kiraya Verene ait kalacaktır.
+            </p>
+            <br>
+            <br>
+            <br>
+            <span>page 4 of 7</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="EN">
+            <h4 class="article">ARTICLE 8-EXPENSES ARISING FROM USE:</h4>
+            <p style="line-height: 16.5px;">
+                If the Lessor refrains from paying or delays the payment of all kinds of expense items (dues, heating,
+                ventilation, water, electricity, environmental cleaning tax, cleaning and lighting expenses, caretaker,
+                elevator maintenance, etc.) arising from the common use of the apartment / complex where the leased
+                immovable is located, or if he/she behaves in violation of the environment, neighborhood law, law and
+                disturbing behavior, or if his/her behavior becomes unbearable in a way that does not comply with
+                general morality, it constitutes a breach of the contract. In the aforementioned cases, the Lessor has
+                the right to terminate the contract.
+            </p>
+            <h4 class="article">ARTICLE 9-TERMINATION OF THE CONTRACT:</h4>
+            <p style="line-height: 15px;">
+                The Lessor may not terminate this contract of <span class="item" id="englishSpan33"
+                    style="font-style: italic;font-weight: 700;"></span> (<span class="item" id="englishSpan34"
+                    style="font-style: italic;font-weight: 700;"></span>) years/months without notifying the Lessor at
+                least 2 months in advance. In the event that the Lessor terminates this agreement without notifying the
+                Lessor at least 2 months in advance, the Lessor shall be entitled to compensation in the amount of 3
+                months' rent and the Lessor agrees and undertakes to pay this compensation amount to the Lessor without
+                any notice and notification. The termination of the agreement does not prevent the collection of the
+                rent and other debts of the Lessor that are due.
+            </p>
+            <br>
+            <p style="line-height: 18px;">
+                The Lessor irrevocably agrees, declares and undertakes in advance that during the period between the
+                termination notice and the end of the lease period, the Lessor will consent to the Lessor's request to
+                show the immovable property to prospective lessees.
+            </p>
+            <br>
+            <p>
+                In the event that the Lessor violates its commitment in Article 9.2, the Lessor shall be entitled to
+                compensation in the amount of 5 months' rent and the Lessor agrees and undertakes to pay this
+                compensation amount to the Lessor without the need for any notice and notification.
+            </p>
+            <h4 class="article">ARTICLE 10-NOTIFICATION ADDRESS:</h4>
+            <p style="line-height: 15.8px" ;>
+                The notification addresses of the Lessor and the Lessor are the addresses in the table on page 1 of the
+                Agreement. For the Lessor, the address of the real estate subject to the contract shall also be deemed
+                as the notification address. Unless the parties notify the other party in writing of any change of
+                address, all notifications to the aforementioned addresses - even if they have not actually reached the
+                recipient - shall be deemed valid.
+            </p>
+            <h4 class="article">ARTICLE 11 - COMPETENT COURT IN CASE OF DISPUTE:</h4>
+            <p>
+                ISTANBUL ANATOLIA Courts and Execution Offices are authorized in all disputes arising from this
+                contract.
+                <br>
+                <br>
+                This agreement, which consists of a total of -<span class="item" id="englishSpan35"
+                    style="font-style: italic;font-weight: 700;"></span>- (<span class="item" id="englishSpan36"
+                    style="font-style: italic;font-weight: 700;"></span>) pages and 11 articles together with its
+                annexes, has been prepared in -<span class="item" id="englishSpan37"
+                    style="font-style: italic;font-weight: 700;"></span>- (<span class="item" id="englishSpan38"
+                    style="font-style: italic;font-weight: 700;"></span>) copies and signed on <span class="item"
+                    id="englishSpan39" style="font-style: italic;font-weight: 700;"></span> to enter into force on the
+                date of signature with full agreement.
+            </p>
+        </div>
+        <div class="divider"></div>
+        <div class="TR">
+            <h4 class="article">MADDE 8-KULLANIMDAN DOĞAN GİDERLER:</h4>
+            <p>
+                Kiralayanın, kiralanan taşınmazın bulunduğu apartmanın/sitenin ortak kullanımdan doğan her türlü gider
+                kalemini (aidat, ısıtma, havalandırma, su, elektrik, çevre temizlik vergisi, temizleme ve aydınlatma
+                giderleri, kapıcı, asansör bakımı vb.) ödemeden imtina etmesi ya da ödemeleri geciktirmesi veya çevreye,
+                komşuluk hukukuna, kanuna aykırı ve rahatsızlık verici davranışlarda bulunması, davranışlarının genel
+                ahlaka uymayacak şekilde çekilmez bir hal alması halleri sözleşmeye aykırılık teşkil eder. Bahsi geçen
+                durumlarda Kiraya Veren sözleşmeyi fesih hakkına sahiptir.
+            </p>
+            <h4 class="article">MADDE 9-SÖZLEŞMENİN FESHİ:</h4>
+            <p>
+                Kiralayan <span class="item" id="turkishSpan33" style="font-style: italic;font-weight: 700;"></span>
+                (<span class="item" id="turkishSpan34" style="font-style: italic;font-weight: 700;"></span>) yıl/ay olan
+                işbu sözleşmeyi, Kiraya Verene en
+                az 2 ay önce haber vermeksizin feshedemez.
+                Kiralayanın en az 2 ay önce haber vermeksizin işbu sözleşmeyi feshi halinde, Kiraya Veren 3 aylık kira
+                bedeli tutarında tazminata hak kazanır ve Kiralayan işbu tazminat tutarını hiçbir ihtar ve bildirime
+                gerek kalmaksızın Kiraya Verene ödemeyi kabul ve taahhüt eder. Sözleşmenin feshi, Kiralayanın muaccel
+                olmuş kira ve diğer borçlarının tahsiline engel teşkil etmez.
+            </p>
+            <br>
+            <p>
+                Kiralayan, fesih bildirimi ile kira döneminin sonu arasındaki süre zarfında, Kiraya Verenin taşınmazı
+                müstakbel kiralayanlara gösterme isteğine, rıza göstereceğini gayrikabilirücu olarak peşinen kabul,
+                beyan ve taahhüt eder.
+            </p>
+            <br>
+            <p>
+                Kiralayanın 9.2. maddedeki taahhüdüne aykırı davranması halinde Kiraya Veren 5 aylık kira bedeli
+                tutarında tazminata hak kazanır ve Kiralayan işbu tazminat tutarını hiçbir ihtar ve bildirime gerek
+                kalmaksızın Kiraya Verene ödemeyi kabul ve taahhüt eder.
+            </p>
+            <h4 class="article">MADDE 10-TEBLİGAT ADRESİ:</h4>
+            <p>
+                Kiralayan ve Kiraya Verenin tebligat adresleri Sözleşmenin 1 numaralı sayfasında mevcut tabloda yer alan
+                adreslerdir. Kiralayan bakımından sözleşme konusu taşınmazın adresi de tebligat adresi sayılır. Taraflar
+                adres değişikliklerini yazılı olarak diğer tarafa bildirmedikçe, bahsi geçen adreslere yapılacak her
+                türlü tebligat - fiilen alıcısına ulaşmamış olsa dahi - geçerli kabul edilir.
+            </p>
+            <h4 class="article">MADDE 11 - UYUŞMAZLIK HALİNDE YETKİLİ MAHKEME:</h4>
+            <p>
+                İşbu sözleşmeden kaynaklanacak her türlü uyuşmazlıkta İSTANBUL ANADOLU Mahkemeleri ve İcra Daireleri
+                yetkilidir.
+                Ekleri ile birlikte toplam -<span class="item" id="turkishSpan35"
+                    style="font-style: italic;font-weight: 700;"></span>- (<span class="item" id="turkishSpan36"
+                    style="font-style: italic;font-weight: 700;"></span>) sayfa ve 11 maddeden ibaret olan işbu
+                sözleşme -<span class="item" id="turkishSpan37" style="font-style: italic;font-weight: 700;"></span>-
+                (<span class="item" id="turkishSpan38" style="font-style: italic;font-weight: 700;"></span>) nüsha
+                olarak
+                düzenlenmiş ve tam bir mutabakat ile imza tarihinde yürürlüğe girmek üzere <span class="item"
+                    id="turkishSpan39" style="font-style: italic;font-weight: 700;"></span> tarihinde imza altına
+                alınmıştır.
+            </p>
+            <span>page 5 of 7</span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="EN">
+            <h4 style="text-decoration: underline;" class="article">ANNEXES:</h4>
+            1) Declaration of Furniture and Fixtures Delivered with the Leased Immovable<br><br>
+            2) Copies of Identity Cards of the Parties
+            <br>
+            <br>
+            <table class="last-table" style="text-align: center;margin-right: 26px;">
+                <tr>
+                    <td>LESSOR</td>
+                    <td>GUARANTOR</td>
+                    <td>LESSEE</td>
+                </tr>
+                <tr>
+                    <td style="height: 90px;"></td>
+                    <td style="height: 90px;"></td>
+                    <td style="height: 90px;"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="divider"></div>
+        <div class="TR">
+            <h4 style="text-decoration: underline;" class="article">EKLERİ:</h4>
+            1) Kiralanan Taşınmaz İle Beraber Teslim Alınan Mobilya - Demirbaş Eşya Beyanı<br><br>
+            2) Tarafların Nüfus Cüzdanı Suretleri
+            <br>
+            <br>
+            <table class="last-table" style="text-align: center;margin-left: 26px;">
+                <tr>
+                    <td>KİRAYA VEREN</td>
+                    <td>MÜTESELSİL KEFİL</td>
+                    <td>KİRALAYAN</td>
+                </tr>
+                <tr>
+                    <td style="height: 90px;"></td>
+                    <td style="height: 90px;"></td>
+                    <td style="height: 90px;"></td>
+                </tr>
+            </table>
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br>
+            <span>page 6 of 7</span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="EN">
+            <h4 class="article">ANNEX 1: DECLARATION OF FURNITURE AND FIXTURES RECEIVED WITH THE LEASED IMMOVABLE</h4>
+            <div class="my-box">
+                <p id="englishTexts1"></p>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="TR">
+            <h4 class="article">EK 1: KİRALANAN TAŞINMAZ İLE TESLİM ALINAN MOBİLYA - DEMİRBAŞ EŞYA BEYANI</h4>
+            <br>
+            <div class="my-box">
+                <p id="turkishTexts1"></p>
+            </div>
+            <span class="page">page 7 of 7</span>
+        </div>
+    </div>
+    <div class="noprint">
+        <div class="control-box">
+            <div class="controls">
+                <input type="text" placeholder="Bina No – Kat No – Daire No" id="input1">
+                <button onclick="saveData(1)">Save</button>
+            </div>
+            <div class="controls">
+                <input type="text" placeholder="Mahallesi – Caddesi – Sokağı" id="input2">
+                <button onclick="saveData(2)">Save</button>
+            </div>
+            <div class="controls">
+                <input type="text" placeholder="İlçe – İl" id="input3">
+                <button onclick="saveData(3)">Save</button>
+            </div>
+            <div class="controls">
+                <input type="text" placeholder="Kiralanan şeyin cinsi" id="input4">
+                <button onclick="saveData(4)">Save</button>
+            </div>
+            <div class="controls">
+                <input type="text" placeholder="Kiraya Verenin–Adı, Soyadı, GSM" id="input5">
+                <button onclick="saveData(5)">Save</button>
+            </div>
+            <div class="controls">
+                <input type="text" placeholder="Kiraya Verenin – T.C No." id="input6">
+                <button onclick="saveData(6)">Save</button>
+            </div>
+            <div class="controls">
+                <input type="text" placeholder="Kiraya Verenin – Adresi" id="input7">
+                <button onclick="saveData(7)">Save</button>
+            </div>
+            <div class="controls">
+                <input type="text" placeholder="Kiralayanın–Adı, Soyadı, GSM" id="input8">
+                <button onclick="saveData(8)">Save</button>
+            </div>
+            <div class="controls">
+                <input type="text" placeholder="Kiralayanın – T.C No" id="input9">
+                <button onclick="saveData(9)">Save</button>
+            </div>
+            <div class="controls">
+                <input type="text" placeholder="Kiralayanın – Adresi" id="input10">
+                <button onclick="saveData(10)">Save</button>
+            </div>
+            <div class="controls">
+                <input type="text" placeholder="Kefilin–Adı, Soyadı, T.C. No, Adresi" id="input11">
+                <button onclick="saveData(11)">Save</button>
+            </div>
+            <div class="controls">
+                <input type="text" placeholder="Bir aylık kira bedeli karşılığı" id="input12">
+                <button onclick="saveData(12)">Save</button>
+            </div>
+            <div class="controls">
+                <input type="text" placeholder="Bir senelik kira bedeli karşılığı" id="input13">
+                <button onclick="saveData(13)">Save</button>
+            </div>
+            <br>
+            <br>
+            <div class="controls">
+                <input type="text" placeholder="Kira süresi(EN)" id="textAreaEng2">
+                <button onclick="saveEng(2)">Save (EN)</button>
+                <input type="text" placeholder="Kira süresi(TR)" id="textAreaTr2">
+                <button onclick="saveTr(2)">Save (TR)</button>
+            </div>
+            <div class="controls">
+                <input type="text" placeholder="Kiranın başlangıç tarihi" id="input15">
+                <button onclick="saveData(15)">Save</button>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="controls">
+                <input type="text" placeholder="Kiraya Veren" id="input16">
+                <button onclick="saveData(16)">Save</button>
+            </div>
+            <div class="controls">
+                <input type="text" placeholder="Kiralayan" id="input17">
+                <button onclick="saveData(17)">Save</button>
+            </div>
+            <br>
+            <br>
+            <div class="controls">
+                <input type="text" placeholder="Kiralanan Adres" id="input18">
+                <button onclick="saveData(18)">Save</button>
+            </div>
+            <br><br><br><br><br><br><br><br>
+            <div class="row-box">
+                <input type="text" placeholder="Kira Süresi(rakam)" id="input19">
+                <button onclick="saveData(19)">Save</button>
+                <input type="text" placeholder="Kira Süresi(harf)" id="input20">
+                <button onclick="saveData(20)">Save</button>
+                <input type="text" placeholder="Sözleşme Başlangıç Tarihi" id="input21">
+                <button onclick="saveData(21)">Save</button>
+                <input type="text" placeholder="Sözleşme Bitiş Tarihi" id="input22">
+                <button onclick="saveData(22)">Save</button>
+            </div>
+            <br><br><br><br><br><br>
+            <div class="row-box">
+                <input type="text" placeholder="Aylık Kira Bedeli(rakam)" id="input23">
+                <button onclick="saveData(23)">Save</button>
+                <br>
+                <input type="text" placeholder="Yıllık Kira Bedeli(harf)" id="textAreaEng4">
+                <button onclick="saveEng(4)">Save(EN)</button>
+                <input type="text" placeholder="Yıllık Kira Bedeli(harf)" id="textAreaTr4">
+                <button onclick="saveTr(4)">Save(TR)</button>
+                <input type="text" placeholder="Kira Ödeme Başlangıç Günü" id="input25">
+                <button onclick="saveData(25)">Save</button>
+                <input type="text" placeholder="Kira Ödeme Son günü" id="input26">
+                <button onclick="saveData(26)">Save</button>
+            </div>
+            <br>
+            <br>
+            <div class="controls">
+                <input type="text" placeholder="Banka İsmi" id="input27">
+                <button onclick="saveData(27)">Save</button>
+            </div>
+            <div class="controls">
+                <input type="text" placeholder="Hesap Sahibi" id="input28">
+                <button onclick="saveData(28)">Save</button>
+            </div>
+            <div class="controls">
+                <input type="text" placeholder="IBAN" id="input29">
+                <button onclick="saveData(29)">Save</button>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="controls">
+                <input type="text" placeholder="Depozito Bedeli" id="input30">
+                <button onclick="saveData(30)">Save</button>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="controls">
+                <input type="text" placeholder="Depozito Bedeli" id="input31">
+                <button onclick="saveData(31)">Save</button>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="controls">
+                <input type="text" placeholder="Kullanım Amacı(EN)" id="textAreaEng3">
+                <button onclick="saveEng(3)">Save(EN)</button>
+                <input type="text" placeholder="Kullanım Amacı(TR)" id="textAreaTr3">
+                <button onclick="saveTr(3)">Save(TR)</button>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="controls">
+                <input type="text" placeholder="Sözleşme Süresi(rakam)" id="input33">
+                <button onclick="saveData(33)">Save</button>
+            </div>
+            <div class="controls">
+                <input type="text" placeholder="Sözleşme Süresi(harf)" id="input34">
+                <button onclick="saveData(34)">Save</button>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="controls">
+                <input type="text" placeholder="Sözleşme Sayfa Adet(rakam)" id="input35">
+                <button onclick="saveData(35)">Save</button>
+                <input type="text" placeholder="Sözleşme Sayfa Adet(harf)" id="input36">
+                <button onclick="saveData(36)">Save</button>
+            </div>
+            <div class="controls">
+                <input type="text" placeholder="Nüsha Adeti(rakam)" id="input37">
+                <button onclick="saveData(37)">Save</button>
+                <input type="text" placeholder="Nüsha Adeti(harf)" id="input38">
+                <button onclick="saveData(38)">Save</button>
+            </div>
+            <div class="controls">
+                <input type="text" placeholder="Sözleşme Tarihi" id="input39">
+                <button onclick="saveData(39)">Save</button>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br>
+            <div class="controls">
+                <textarea id="textAreaEng1" placeholder="Mobilya Demirbaş(ENG)" cols="10" rows="13"
+                    style="margin-top: 4px;width: 50%;font-size: 20px;padding: 10px;"></textarea>
+                <textarea id="textAreaTr1" placeholder="Mobilya Demirbaş(TR)" cols=" 10" rows="13"
+                    style="margin-top: 4px;width: 50%;font-size: 20px;padding: 10px;"></textarea>
+            </div>
+            <div class="controls">
+                <button class="text-btn" onclick="saveEng(1)">Save</button>
+                <button class="text-btn" onclick="saveTr(1)">Save</button>
+            </div>
+            <br><br><br>
+            <div class="controls">
+                <button style="width: 120px;" onclick="printFunction()">Print PDF</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function printFunction() {
+            window.print()
+        }
+    </script>
+</body>
+
+</html>
